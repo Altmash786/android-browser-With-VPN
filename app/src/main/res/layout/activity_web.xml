@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/lytMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/coloroffwhite"
+        android:orientation="vertical"
+        tools:context=".browser.WebActivity">
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/lytSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_searchmain"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:layout_toLeftOf="@+id/googleMic"
+                android:hint="Enter URL..."
+                android:textColor="@color/black"
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/black"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="3dp"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/googleMic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:padding="5dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/googlemic" />
+
+            <ImageView
+                android:id="@+id/imgBrowser"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:onClick="onclickApp"
+                android:src="@raw/logo" />
+
+        </RelativeLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_below="@+id/lytSearch"
+            android:id="@+id/viewpager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/lytOwnInter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imgOwnInter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/imgCloseInter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:src="@drawable/ic_baseline_close_24"
+                app:tint="#fff" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/framelyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</layout>

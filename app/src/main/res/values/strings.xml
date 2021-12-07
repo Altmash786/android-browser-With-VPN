@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">AppBrowser</string>
+
+    <string name="vpn_process_name" translatable="false">:my.custom.vpn.process.name</string>
+    <string name="vpn_provider_authorities" translatable="false">com.anchorfree.hydrasdk.app.demo</string>
+
+    <string name="log_in">LOGIN</string>
+    <string name="str1">sree</string>
+    <string name="log_out">LOGOUT</string>
+    <string name="connect">CONNECT</string>
+    <string name="disconnect">DISCONNECT</string>
+    <string name="optimal_server">OPTIMAL SERVER</string>
+    <string name="unknown">UNKNOWN</string>
+
+    <string name="devices_exceed">Available device count is exceed. Please consider upgrading your subscription.</string>
+    <string name="sessions_exceed">Available active session count is exceed. Please consider upgrading your subscription.</string>
+
+    <string name="version">Version</string>
+    <string name="app_error">Application error</string>
+    <string name="no_data">No data</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="account_type">Account Type</string>
+    <string name="activated_devices">Activated Devices</string>
+    <string name="account">Account</string>
+    <string name="signin_error">Unable to sign in</string>
+    <string name="no_network">Unable to connect to server. Check your Internet connection.</string>
+    <string name="online_devices">Online Devices</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="vpn_server_location">VPN Server Location</string>
+    <string name="vpn_node">VPN Node</string>
+    <string name="legal_information">Legal Information</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+
+    <string name="logged_in">Logged in</string>
+    <string name="logged_out">Logged out</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+
+    <string name="host_url_title">Host Url: </string>
+    <string name="carrier_id_title">Carrier ID: </string>
+    <string name="confirm">CONFIRM</string>
+
+    <string name="traffic_stats">UL: %1$s, DL: %2$s </string>
+    <string name="traffic_limit">%1$s of %2$s available</string>
+    <string name="traffic_unlimited">UNLIMITED</string>
+
+    <string name="current_server">CURRENT_SERVER</string>
+    <string name="connecting">Connecting</string>
+    <string name="paused">Paused</string>
+
+    <!--user's personalization-->
+    <bool name="admob_flag">true</bool>
+
+    <!--google admob keys-->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_native_advance">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_interstitial">ca-app-pub-3940256099942544/1033173712</string>
+    <!--google admob keys-->
+
+    <!--Change Privacy Policy URL-->
+    <string name="privacy_policy_link">Your_Privacy_Policy_URL</string>
+    <!--END Change Privacy Policy URL-->
+
+    <!--Change Contact E-mail Address-->
+    <string name="help_to_improve_us">Your_Contact_Email</string>
+    <!--END Change Contact E-mail Address-->
+
+    <!--FAQ QUESTION DETAILS -->
+
+    <!--QUESTIONS-->
+    <string name="question1">1. How to use UltimateVPN?</string>
+    <string name="question2">2. How long can I use UltimateVPN for each connection?</string>
+    <string name="question3">3. Why "can't" I use internet after connection established?</string>
+    <string name="question4">4. How to disable battery optimization for UltimateVPN?</string>
+    <string name="question5">5. What is Smart Proxy?</string>
+    <string name="question6">6. When I try to connect, Android system request a permission, but I can not accept it, why?</string>
+
+    <!--ANSWERS-->
+    <string name="question1_answer">Click connect button in the main screen to use UltimateVPN. If Android system show a dialog to request a connection permission, click OK or Accept to continue.</string>
+    <string name="question2_answer">As long as you can. We don/t set time or traffic limition on each connection</string>
+    <string name="question3_answer">Fist of all, check your network connection. Then make sure "you've" disabled battery optimization for UltimateVPN in "Android's" battery setting (which means enable background activity for UltimateVPN). If you enable Smart Proxy, you also need to make sure all the apps you need to proxy is checked in Smart Proxy setting.</string>
+    <string name="question4_answer" />
+    <string name="question5_answer">On Android 5.0 or above, you can only eanble some of the apps to use UltimateVPN to proxy traffic, and all the other apps use local network. For example, if Facebook and Skype are blocked in your country, make them checked in Smart Proxy. After the VPN connection is established, only Facebook and "Skype's" traffic go through VPN, and all your other apps will perform as good as usual.</string>
+    <string name="question6_answer">You may be running some app which changes the screen color or opens a floating window. "Android's" security system prevent VPN to be running under these cases. You need close this kind of app temporarily to continue.</string>
+    <!--END FAQ QUESTION DETAILS-->
+
+    <!--    About us text details-->
+    <string name="Aboutus_page_Text">UltimateVPN and Security unblock Proxy is world best supervpn app its Super Secure VPN Unlimited Proxy Server for lifetime free access. Unlock any websites save your device
+    Secure VPN is the most trusted security, privacy and access platform with top performance on speed, stability and security to unblock sites, unblock any apps or websites, access social networks, watch videos and movies, protect Wi-Fi hotspot security and protect privacy</string>
+
+    <!--subscription dialog text-->
+    <string name="main_title">Select Subscription</string>
+    <string name="first_option">Remove ads (3.99$/Month)</string>
+    <string name="second_option">Remove ads (6.99$/3 Months)</string>
+    <string name="third_option">Remove ads (7.99$/6 Months)</string>
+    <string name="forth_option">Remove ads (8.99$/Yearly)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
