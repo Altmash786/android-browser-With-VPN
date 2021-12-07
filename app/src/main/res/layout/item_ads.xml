@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        tools:ignore="MissingDefaultResource">
+
+        <com.google.android.ads.nativetemplates.TemplateView
+            android:id="@+id/my_template"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:gnt_template_type="@layout/gnt_small_template_view" />
+
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/native_ad_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardOwn"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginHorizontal="10dp"
+            android:visibility="gone"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageView
+                    android:id="@+id/imgOwnAd"
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:id="@+id/tvTItle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_toEndOf="@+id/imgOwnAd"
+                    android:layout_toRightOf="@+id/imgOwnAd"
+                    android:text="Advertisements"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ad_notification_view"
+                    android:layout_width="@dimen/gnt_ad_indicator_width"
+                    android:layout_height="@dimen/gnt_ad_indicator_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="@dimen/gnt_ad_indicator_top_margin"
+                    android:background="@drawable/gnt_rounded_corners_shape"
+                    android:gravity="center"
+                    android:text="Ad"
+                    android:textColor="@color/gnt_ad_green"
+                    android:textSize="@dimen/gnt_ad_indicator_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAdDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTItle"
+                    android:layout_toEndOf="@+id/imgOwnAd"
+                    android:layout_toRightOf="@+id/imgOwnAd"
+                    android:text="Description"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvadwebsite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvAdDes"
+                    android:layout_toEndOf="@+id/imgOwnAd"
+                    android:layout_toRightOf="@+id/imgOwnAd"
+                    android:text="Description"
+                    android:textColor="@color/gnt_blue"
+
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btnAdClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_toEndOf="@+id/imgOwnAd"
+                    android:layout_toRightOf="@+id/imgOwnAd"
+                    android:background="@color/gnt_blue"
+                    android:text="OPEN NOW"
+                    android:textColor="@color/gnt_white" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</layout>

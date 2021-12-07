@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#fff"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/region_image"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+          />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/region_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/region_image"
+            android:padding="@dimen/default_padding"
+            android:text="DEFAULT REGION"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/region_signal_image"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/server_signal_3" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
